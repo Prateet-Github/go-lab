@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 // name := "Yash" // invalid globally
+// vars are statically typed
 
 func main() {
 
