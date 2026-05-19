@@ -4,6 +4,9 @@ import "fmt"
 
 func main() {
 
+	// break
+	// continue
+
 	// basic for
 	for i := 0; i < 5; i++ {
 		fmt.Println(i)
