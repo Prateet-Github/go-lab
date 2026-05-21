@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// array 
+
 func main() {
 	var arr [5]int
 	arr[0] = 10
