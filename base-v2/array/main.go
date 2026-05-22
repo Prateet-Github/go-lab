@@ -2,19 +2,18 @@ package main
 
 import "fmt"
 
-// array 
-
 func main() {
-	var arr [5]int
-	arr[0] = 10
-	arr[1] = 20
-	arr[2] = 30
-	arr[3] = 40
-	arr[4] = 50
+	var nums [5]int
 
-	fmt.Println(arr)
+	names := [3]string{"Me", "You"}
 
-	for i := 0; i < len(arr); i++ {
-		fmt.Println(arr[i])
-	}
+	nums[1] = 3
+
+	// 2d array
+	matrix := [2][2]int{{1, 2}, {3, 4}}
+
+	fmt.Println(len(nums))
+	fmt.Println(nums)
+	fmt.Println(names)
+	fmt.Println(matrix)
 }
