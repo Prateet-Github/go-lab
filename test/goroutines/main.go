@@ -7,7 +7,7 @@ import (
 
 func main() {
 	go sayHello()
-	time.Sleep(10 * time.Second) // Wait for the goroutine to finish
+	time.Sleep(20 * time.Second) // Wait for the goroutine to finish
 }
 
 func sayHello() {
