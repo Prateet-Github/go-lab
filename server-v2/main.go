@@ -42,6 +42,10 @@ func main() {
 		fmt.Fprintln(w, "OK")
 	})
 
+	http.HandleFunc("/products/all", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintln(w, "GET /products/all")
+	})
+
 	fmt.Println("Users service listening on :9000")
 	http.ListenAndServe(":9000", nil)
 }
