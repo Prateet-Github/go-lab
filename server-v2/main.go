@@ -38,9 +38,9 @@ func main() {
 		fmt.Fprintln(w, "GET /products/latest")
 	})
 
-	http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintln(w, "OK")
-	})
+	// http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
+	// 	fmt.Fprintln(w, "OK")
+	// })
 
 	http.HandleFunc("/products/all", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "GET /products/all")
