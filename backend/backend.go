@@ -22,6 +22,10 @@ func main() {
 		fmt.Fprintln(w, "GET /users/orders")
 	})
 
+		http.HandleFunc("/users/info", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintln(w, "GET /users/info")
+	})
+
 	http.HandleFunc("/orders", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "GET /orders")
 	})
