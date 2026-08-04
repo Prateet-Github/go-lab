@@ -18,11 +18,15 @@ func main() {
 		fmt.Fprintln(w, "GET /users/settings")
 	})
 
+	http.HandleFunc("/users/latest-orders", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintln(w, "GET /users/latest-orders")
+	})
+
 	http.HandleFunc("/users/orders", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "GET /users/orders")
 	})
 
-		http.HandleFunc("/users/info", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/users/info", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "GET /users/info")
 	})
 
