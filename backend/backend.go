@@ -26,6 +26,10 @@ func main() {
 		fmt.Fprintln(w, "Backend received:", r.URL.Path)
 	})
 
+	http.HandleFunc("/files/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintln(w, "FILES BACKEND")
+	})
+
 	http.HandleFunc("/users/orders", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "GET /users/orders")
 	})
