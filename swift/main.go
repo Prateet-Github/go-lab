@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println("Swift prototype...")
+	fmt.Println("Swift prototype..")
 }
