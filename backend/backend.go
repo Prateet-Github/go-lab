@@ -21,6 +21,9 @@ func main() {
 	mux.HandleFunc("/users/settings", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "GET /users/settings")
 	})
+	mux.HandleFunc("/users/settings/update", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintln(w, "GET /users/settings/update")
+	})
 
 	mux.HandleFunc("/users/latest-orders", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "GET /users/latest-orders")
