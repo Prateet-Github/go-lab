@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package user;
 
-option go_package = "grpc-starter/proto;userpb";
+option go_package = "grpc-go/proto;userpb";
 
 message User {
   int32 id = 1;
