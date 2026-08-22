@@ -26,7 +26,7 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
 
-	// calling the remote RPC method as if it's a local Go function (that's what gRPC does)
+	// calling the remote RPC method as if it's a local Go function (that's what gRPC does) so this is basically the client stub
 	res, err := client.GetUser(ctx, &userpb.GetUserRequest{Id: 101})
 	if err != nil {
 		log.Fatalf("RPC failed: %v", err)

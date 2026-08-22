@@ -15,6 +15,7 @@ type server struct {
 	userpb.UnimplementedUserServiceServer
 }
 
+// server stub
 func (s *server) GetUser(ctx context.Context, req *userpb.GetUserRequest) (*userpb.User, error) {
 	log.Printf("Received RPC request for User ID: %d", req.GetId())
 
